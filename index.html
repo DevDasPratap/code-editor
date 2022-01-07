@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="assets/theme/material.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="container-fluid" id="content">
+      <div class="row">
+        <div class="col-md-4">
+          <textarea id="htmlEditor" class="editor" placeholder="Write HTML here.."></textarea>
+          <textarea id="cssEditor" class="editor" placeholder="Write CSS here.."></textarea>
+          <textarea id="jsEditor" class="editor" placeholder="Write JavaScript here.."></textarea>
+        </div>
+        <div class="col-md-8">
+          <iframe id="outputCode"></iframe>
+        </div>
+      </div>
+    </main>
+    <!-- JS FILES -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/codemirror.js"></script>
+
+    <script src="assets/mode/xml/xml.js"></script>
+    <script src="assets/mode/javascript/javascript.js"></script>
+    <script src="assets/mode/css/css.js"></script>
+    <script src="assets/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script src="assets/addon/edit/closebrackets.js"></script>
+    <script src="assets/addon/edit/closetag.js"></script>
+    <script src="assets/addon/fold/xml-fold.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

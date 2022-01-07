@@ -1,0 +1,41 @@
+#content {
+    padding: 20px;
+}
+
+.cm-s-material.CodeMirror {
+    margin-bottom: 10px;
+}
+
+.CodeMirror-hscrollbar::placeholder,
+.CodeMirror-vscrollbar::placeholder {
+    color: #f4f4f4;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar,
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-track,
+.CodeMirror-vscrollbar::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb,
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+  background: #dc3545;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb:hover,
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb:hover {
+  background: #dc3545;
+}
+
+#content #outputCode {
+    padding: 0px;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    height: 100%;
+    border-radius: 10px;
+}
